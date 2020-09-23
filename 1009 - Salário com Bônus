@@ -1,0 +1,5 @@
+number = str(input())
+workhour = float(input())
+hourpay = float(input())
+salary = workhour + (hourpay*0.15)
+print('TOTAL = R$ {:.2f}'.format(salary))
