@@ -1,0 +1,38 @@
+D = float(input())
+n100 = D//100
+D = D - (n100*100)
+n50 = D//50
+D = D - (n50*50)
+n20 = D//20
+D = D - (n20*20)
+n10 = D//10
+D = D - (n10*10)
+n5 = D//5
+D = D - (n5*5)
+n2 = D//2
+D = D - (n2*2)
+m1 = int(round(D, 2)/1)
+D = D - (m1*1)
+m50 = int(round(D, 2)/0.50)
+D = D - (m50*0.50)
+m25 = int(round(D, 2)/0.25)
+D = D - (m25*0.25)
+m10 = int(round(D, 2)/0.10)
+D = D - (m10*0.10)
+m5 = int(round(D, 2)/0.05)
+D = D - (m5*0.05)
+m01 = int(round(D, 2)/0.01)
+print('NOTAS:')
+print('{:.0f} nota(s) de R$ 100.00'.format(n100))
+print('{:.0f} nota(s) de R$ 50.00'.format(n50))
+print('{:.0f} nota(s) de R$ 20.00'.format(n20))
+print('{:.0f} nota(s) de R$ 10.00'.format(n10))
+print('{:.0f} nota(s) de R$ 5.00'.format(n5))
+print('{:.0f} nota(s) de R$ 2.00'.format(n2))
+print('MOEDAS:')
+print('{:.0f} moeda(s) de R$ 1.00'.format(m1))
+print('{:.0f} moeda(s) de R$ 0.50'.format(m50))
+print('{:.0f} moeda(s) de R$ 0.25'.format(m25))
+print('{:.0f} moeda(s) de R$ 0.10'.format(m10))
+print('{:.0f} moeda(s) de R$ 0.05'.format(m5))
+print('{:.0f} moeda(s) de R$ 0.01'.format(m01))
